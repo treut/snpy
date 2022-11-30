@@ -3,13 +3,10 @@ def coincidence(array=None, ranges=None):
         return []
     else:
         result = []
-        rangeres = []
-        for i in ranges:
-            rangeres.append(i)
-            rangeres.append(i + 0.5)
-        for b in array:
-            if b in rangeres:
-                result.append(b)
+        for i in array:
+            if type(i) is int or type(i) is float:
+                if ranges.start <= i <= ranges.stop-1:
+                    result.append(i)
         return result
 
 
