@@ -26,4 +26,4 @@ print(max_odd(['ololo', 'fufufu']))
 print(max_odd([2, 2, 4]))
 
 #tuple
-print(max_odd(['ololo', 2, 3, 4, (1, 5, [7, 9, 4]), None]))
+# print(max_odd(['ololo', 2, 3, 4, (1, 5, [7, 9, 4]), None]))
