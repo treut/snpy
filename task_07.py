@@ -3,7 +3,7 @@ def combine_anagrams(words_array):
     for k, v in enumerate(words_array):
         conv = "".join(sorted(list(str(words_array[k]).lower())))
 
-        if not conv in result.keys():
+        if conv not in result.keys():
             result[conv] = []
         result[conv].append(words_array[k])
     return list(result.values())
