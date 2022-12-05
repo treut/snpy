@@ -7,9 +7,13 @@ def count_words(string_ex):
     for k, v in enumerate(string_ex):
         if re.sub(r'[^a-zа-я]', "", v) == "":
             continue
-        if v not in result.keys():
-            result[v] = 0
-        result[v] += 1
+        result[v] = result.get(v, 0) + 1
+
+        #v1.0
+        # if v not in result.keys():
+        #     result[v] = 0
+        # result[v] += 1
+
     return result
 
 
